@@ -8,4 +8,9 @@ const personalMovieDB = {
   privat: false,
 };
 
+const lastFilmWhichSaw = prompt('Один из последних просмотренных фильмов');
+const yourGradeForLastFilm = prompt('На сколько оцените его?');
+
+personalMovieDB.movies[lastFilmWhichSaw] = yourGradeForLastFilm;
+
 console.log(personalMovieDB);
